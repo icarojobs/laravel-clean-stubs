@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace {{ namespace }};
 
+<<<<<<< HEAD
 use {{ namespacedModel }};
 use {{ rootNamespace }}Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -55,5 +56,37 @@ class {{ class }} extends Controller
     public function destroy({{ parentModel }} ${{ parentModelVariable }})
     {
         abort(404);
+=======
+use Illuminate\Http\Request;
+
+class {{ class }}
+{
+    public function index()
+    {
+    }
+
+    public function create()
+    {
+    }
+
+    public function store(Request $request)
+    {
+    }
+
+    public function show(int $id)
+    {
+    }
+
+    public function edit(int $id)
+    {
+    }
+
+    public function update(Request $request, int $id)
+    {
+    }
+
+    public function destroy(int $id)
+    {
+>>>>>>> 27636ed (setup project)
     }
 }

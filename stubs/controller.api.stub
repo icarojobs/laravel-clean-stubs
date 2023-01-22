@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 namespace {{ namespace }};
 
 use {{ rootNamespace }}Http\Controllers\Controller;
@@ -60,5 +61,33 @@ class {{ class }} extends Controller
     public function destroy($id)
     {
         //
+=======
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use Illuminate\Http\Request;
+
+class {{ class }}
+{
+    public function index()
+    {
+    }
+
+    public function store(Request $request)
+    {
+    }
+
+    public function show($id)
+    {
+    }
+
+    public function update(Request $request, $id)
+    {
+    }
+
+    public function destroy($id)
+    {
+>>>>>>> 27636ed (setup project)
     }
 }
